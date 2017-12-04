@@ -16,13 +16,8 @@ class ROT
       if letters.include?(letter)
         new_index = letters.index(letter) + places
         
-        # puts "new_index: " + new_index.to_s
-        # puts "new_index > letters_size: " + (new_index > letters_size).to_s
-        
         if new_index >= letters_size
           new_index = new_index - letters_size
-          
-          # puts "new new_index: " + new_index.to_s
         end
         
         decrypted_msg.push(letters[new_index])
